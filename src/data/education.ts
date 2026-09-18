@@ -14,19 +14,19 @@ export interface EducationItem {
 export const educationData: EducationItem[] = [
   {
     id: "edu-bachelor",
-    degree: "Bachelor Degree",
-    field: "Computer Science / Information Technology",
+    degree: "Bachelor of Cyber Security (BCS.IT)",
+    field: "Cyber Security & Information Technology",
     institution: "KFA Business School",
     status: "Currently Studying",
     currentTerm: "8th Semester",
     period: "Ongoing (8th Semester)",
     location: "Kathmandu, Nepal",
     description:
-      "Advanced undergraduate academic program focusing on computer science, computational intelligence, data structures, algorithms, machine learning, and quantitative analytics.",
+      "Undergraduate degree program combining cyber security principles, machine learning, data science, deep learning, software engineering, and analytical problem-solving.",
     highlights: [
-      "Currently in 8th Semester (Final Year)",
-      "Major Capstone: Brain Tumor Segmentation using Deep Learning (VGG16 + U-Net)",
-      "Core focus on Applied Artificial Intelligence, Data Engineering, and Machine Learning systems"
+      "Currently studying in the 8th Semester",
+      "Major Capstone: Brain Tumor Segmentation from MRI Images using PyTorch (VGG16 + U-Net Hybrid)",
+      "Core focus on Data Science, Machine Learning, Deep Learning, and Cyber Security"
     ]
   },
   {
@@ -38,11 +38,10 @@ export const educationData: EducationItem[] = [
     period: "Completed",
     location: "Kathmandu, Nepal",
     description:
-      "Higher secondary education with a rigorous focus on physical sciences, mathematics, and foundational computer programming principles.",
+      "Higher secondary education with a focus on Physical Sciences, Advanced Mathematics, and Computer Science fundamentals.",
     highlights: [
-      "Rigorous foundations in Advanced Mathematics, Physics, and Logic",
-      "Early programming fundamentals and computational reasoning",
-      "Active participant in science and technology academic clubs"
+      "Foundations in Mathematics, Physics, and Computer Science",
+      "Early programming logic and algorithmic reasoning"
     ]
   }
 ];

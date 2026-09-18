@@ -14,6 +14,25 @@ export interface CertificateItem {
 
 export const certificatesData: CertificateItem[] = [
   {
+    id: "cert-ds-mindrisers",
+    title: "Data Science Course",
+    recipient: "Ashish Raj Joshi",
+    issuer: "Mind risers Institute of Technology",
+    issueDate: "Completed",
+    credentialCode: "Mind risers IT",
+    verified: true,
+    image: "/assets/certificates/intro-data-science.svg",
+    pdfUrl: "/assets/certificates/simplilearn-intro-data-science.pdf",
+    description:
+      "Comprehensive Data Science training covering Python for Data Science, Data Preprocessing, Machine Learning, Exploratory Data Analysis, and model building.",
+    skillsLearned: [
+      "Python Data Science",
+      "Data Cleaning & EDA",
+      "Machine Learning",
+      "Feature Engineering"
+    ]
+  },
+  {
     id: "cert-ml-python",
     title: "Machine Learning Using Python",
     recipient: "Ashish Raj Joshi",
