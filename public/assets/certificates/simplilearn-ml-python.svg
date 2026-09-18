@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b2447"/>
+      <stop offset="100%" stop-color="#19376d"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="800" fill="#ffffff"/>
+  
+  <!-- Outer Border & Accents -->
+  <rect x="25" y="25" width="1150" height="750" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="35" y="35" width="1130" height="730" fill="none" stroke="#f1f5f9" stroke-width="1"/>
+  
+  <!-- Geometric corner ornaments -->
+  <!-- Top Left -->
+  <polygon points="25,25 90,25 25,90" fill="url(#goldGrad)"/>
+  <polygon points="35,35 75,35 35,75" fill="#0b2447"/>
+  <!-- Bottom Left -->
+  <polygon points="25,775 90,775 25,710" fill="url(#goldGrad)"/>
+  <polygon points="35,765 75,765 35,725" fill="#0b2447"/>
+  <!-- Top Right decorative blocks -->
+  <polygon points="1175,25 1110,25 1175,90" fill="url(#goldGrad)"/>
+  <!-- Bottom Right -->
+  <polygon points="1175,775 1110,775 1175,710" fill="url(#goldGrad)"/>
+  
+  <!-- Right decorative ribbon banner -->
+  <rect x="880" y="25" width="180" height="750" fill="url(#blueGrad)"/>
+  <rect x="895" y="25" width="4" height="750" fill="#fbbf24"/>
+  <rect x="1040" y="25" width="4" height="750" fill="#fbbf24"/>
+
+  <!-- Skillup Logo Area -->
+  <g transform="translate(100, 80)">
+    <text x="0" y="35" font-family="'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="700" fill="#f97316">simpl<tspan fill="#0284c7">ı</tspan>learn</text>
+    <text x="185" y="35" font-family="'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="800" fill="#0284c7">Skill<tspan fill="#f97316">UP</tspan></text>
+  </g>
+
+  <!-- Certificate Subheader -->
+  <text x="100" y="195" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="600" letter-spacing="4" fill="#64748b">CERTIFICATE OF</text>
+  <text x="100" y="260" font-family="'Space Grotesk', 'Playfair Display', serif, sans-serif" font-size="58" font-weight="800" fill="#0f172a">COMPLETION</text>
+
+  <!-- Recipient Name -->
+  <text x="100" y="370" font-family="'Space Grotesk', sans-serif" font-size="44" font-weight="700" fill="#0f172a">Ashish Raj Joshi</text>
+  <line x1="100" y1="390" x2="750" y2="390" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Body Content -->
+  <text x="100" y="440" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" fill="#64748b">has successfully completed the online course:</text>
+  <text x="100" y="485" font-family="'Space Grotesk', sans-serif" font-size="26" font-weight="700" fill="#0284c7">Machine Learning Using Python</text>
+
+  <text x="100" y="555" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" fill="#64748b">This professional has demonstrated initiative and a commitment to deepening their skills and advancing</text>
+  <text x="100" y="585" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" fill="#64748b">their career. Well done!</text>
+
+  <!-- Date & Certificate Code -->
+  <g transform="translate(100, 680)">
+    <text x="0" y="0" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#0f172a">10<tspan font-size="12" dy="-6">th</tspan><tspan font-size="18" dy="6"> July 2026</tspan></text>
+    <text x="0" y="30" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" fill="#64748b">Certificate code: <tspan font-weight="600" fill="#0f172a">10451551</tspan></text>
+  </g>
+
+  <!-- Watermark Stamp -->
+  <g transform="translate(420, 620) rotate(-12)" opacity="0.18">
+    <rect x="-80" y="-30" width="220" height="60" rx="10" fill="none" stroke="#059669" stroke-width="4"/>
+    <text x="30" y="10" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="24" font-weight="900" fill="#059669" letter-spacing="3">VERIFIED</text>
+  </g>
+
+  <!-- Signature Block -->
+  <g transform="translate(620, 640)">
+    <!-- Signature Graphic -->
+    <path d="M20,20 Q45,-10 60,15 T90,5 T120,20 T150,10" fill="none" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="35" x2="180" y2="35" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="0" y="55" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#0f172a">Krishna Kumar</text>
+    <text x="0" y="75" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" fill="#64748b">CEO, Simplilearn</text>
+  </g>
+
+  <!-- Golden Seal Badge on Blue Ribbon -->
+  <g transform="translate(970, 600)" filter="url(#shadow)">
+    <!-- Rosette rays -->
+    <circle cx="0" cy="0" r="75" fill="url(#goldGrad)"/>
+    <circle cx="0" cy="0" r="62" fill="#ffffff"/>
+    <circle cx="0" cy="0" r="54" fill="#0b2447"/>
+    <!-- Center Seal Icon -->
+    <g transform="translate(-15, -20) scale(1.4)">
+      <path d="M5,5 L5,25 M15,5 L15,25 M25,10 L25,20" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <text x="0" y="38" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="800" fill="#fbbf24" letter-spacing="1">AUTHENTIC</text>
+  </g>
+</svg>

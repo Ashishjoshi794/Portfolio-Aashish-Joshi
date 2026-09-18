@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#070d1d"/>
+  <g transform="translate(100, 100)">
+    <rect width="600" height="300" rx="16" fill="rgba(15,23,42,0.8)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+    <text x="30" y="45" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="700" fill="#06b6d4">Time Series Decomposition & Forecasting</text>
+    <path d="M30,220 Q120,130 180,190 T300,120 T420,160 T540,80" fill="none" stroke="#00f2fe" stroke-width="3"/>
+    <path d="M420,160 L540,80" stroke="#f59e0b" stroke-width="3" stroke-dasharray="4 4"/>
+    <text x="30" y="260" font-family="'JetBrains Mono', monospace" font-size="12" fill="#94a3b8">Historical Data (Cyan) vs Walk-Forward Forecast (Amber)</text>
+  </g>
+</svg>

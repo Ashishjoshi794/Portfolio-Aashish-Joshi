@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#070d1d"/>
+  <g transform="translate(100, 100)">
+    <rect width="600" height="300" rx="16" fill="rgba(15,23,42,0.8)" stroke="rgba(56,189,248,0.2)" stroke-width="1"/>
+    <text x="30" y="45" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="700" fill="#38bdf8">Healthcare Clinical Decision Boundary</text>
+    <!-- Scatter Plot simulation -->
+    <circle cx="120" cy="180" r="6" fill="#10b981"/>
+    <circle cx="150" cy="200" r="5" fill="#10b981"/>
+    <circle cx="200" cy="160" r="6" fill="#10b981"/>
+    <circle cx="240" cy="190" r="5" fill="#10b981"/>
+    <circle cx="360" cy="110" r="6" fill="#ef4444"/>
+    <circle cx="420" cy="90" r="7" fill="#ef4444"/>
+    <circle cx="460" cy="120" r="6" fill="#ef4444"/>
+    <!-- Decision Boundary Curve -->
+    <path d="M50,260 Q280,180 550,80" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-dasharray="6 6"/>
+    <text x="30" y="260" font-family="'JetBrains Mono', monospace" font-size="12" fill="#94a3b8">Pima Indians Clinical Cohort | 8 Diagnostic Predictors</text>
+  </g>
+</svg>

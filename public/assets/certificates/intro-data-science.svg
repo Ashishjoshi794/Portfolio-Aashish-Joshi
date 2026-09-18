@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="slateGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="800" fill="#030712"/>
+  <rect x="25" y="25" width="1150" height="750" fill="none" stroke="#1e293b" stroke-width="2" rx="16"/>
+  <rect x="35" y="35" width="1130" height="730" fill="none" stroke="rgba(6,182,212,0.2)" stroke-width="1" stroke-dasharray="6 6" rx="12"/>
+
+  <!-- Glowing Corner Ornaments -->
+  <circle cx="35" cy="35" r="8" fill="#06b6d4"/>
+  <circle cx="1165" cy="35" r="8" fill="#06b6d4"/>
+  <circle cx="35" cy="765" r="8" fill="#8b5cf6"/>
+  <circle cx="1165" cy="765" r="8" fill="#8b5cf6"/>
+
+  <g transform="translate(600, 260)" text-anchor="middle">
+    <text y="0" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="600" letter-spacing="4" fill="#06b6d4">VERIFIED COURSEWORK CREDENTIAL</text>
+    <text y="60" font-family="'Space Grotesk', sans-serif" font-size="52" font-weight="800" fill="#f8fafc">Introduction to Data Science</text>
+    <text y="140" font-family="'Space Grotesk', sans-serif" font-size="34" font-weight="700" fill="#94a3b8">Awarded to: <tspan fill="#38bdf8">Ashish Raj Joshi</tspan></text>
+    <text y="220" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" fill="#64748b">Covers fundamental principles of data exploration, statistics, data wrangling and predictive modeling.</text>
+    <rect x="-180" y="270" width="360" height="44" rx="22" fill="rgba(6,182,212,0.1)" stroke="#06b6d4" stroke-width="1.5"/>
+    <text y="298" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="600" fill="#06b6d4">Official Document Available for Verification</text>
+  </g>
+</svg>
