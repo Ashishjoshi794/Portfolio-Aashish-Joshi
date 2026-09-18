@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, FileText, Sparkles } from 'lucide-react';
 import { profileData } from '../../data/profile';
+import { openResumeModal } from '../resume/ResumeModal';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -111,14 +112,15 @@ export const Navbar: React.FC = () => {
 
         {/* Right Action: Resume & Mobile Toggle */}
         <div className="flex items-center gap-3">
-          <a
-            href={profileData.resumeUrl}
-            download="Ashish_Joshi_Resume.pdf"
-            className="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 text-dark-950 hover:brightness-110 shadow-glow-cyan transition-all duration-300"
+          <button
+            type="button"
+            onClick={openResumeModal}
+            className="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 text-dark-950 hover:brightness-110 shadow-glow-cyan transition-all duration-300 cursor-pointer"
+            title="View & Download Official Resume"
           >
             <FileText className="w-3.5 h-3.5" />
             <span>Resume</span>
-          </a>
+          </button>
 
           {/* Mobile Hamburger Button */}
           <button
@@ -155,14 +157,17 @@ export const Navbar: React.FC = () => {
               );
             })}
             <div className="pt-3">
-              <a
-                href={profileData.resumeUrl}
-                download="Ashish_Joshi_Resume.pdf"
-                className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 text-dark-950 shadow-glow-cyan"
+              <button
+                type="button"
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  openResumeModal();
+                }}
+                className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 text-dark-950 shadow-glow-cyan cursor-pointer"
               >
                 <FileText className="w-4 h-4" />
-                <span>Download Resume</span>
-              </a>
+                <span>View & Download Resume</span>
+              </button>
             </div>
           </div>
         </div>

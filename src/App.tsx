@@ -13,6 +13,7 @@ import { Footer } from './components/layout/Footer';
 import { ScrollProgress } from './components/common/ScrollProgress';
 import { BackToTop } from './components/common/BackToTop';
 import { PortfolioChatbot } from './components/chatbot/PortfolioChatbot';
+import { ResumeModal } from './components/resume/ResumeModal';
 
 export const App: React.FC = () => {
   return (
@@ -44,6 +45,9 @@ export const App: React.FC = () => {
 
       {/* Portfolio Assistant Chatbot */}
       <PortfolioChatbot />
+
+      {/* Official Resume Preview & Download Modal */}
+      <ResumeModal />
     </div>
   );
 };

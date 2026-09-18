@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, FileText, Send, Sparkles, Mail, Phone, Cpu, Brain, Database } from 'lucide-react';
+import { ArrowDown, FileText, Send, Sparkles, Mail, Phone, Cpu, Brain, Database, Eye, Download } from 'lucide-react';
 import { SiGithub } from 'react-icons/si';
 import { FaLinkedin } from 'react-icons/fa';
 import { profileData } from '../data/profile';
 import { HeroScene } from '../components/3d/HeroScene';
+import { openResumeModal } from '../components/resume/ResumeModal';
 
 export const Hero: React.FC = () => {
   const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -80,14 +81,27 @@ export const Hero: React.FC = () => {
                 <ArrowDown className="w-4 h-4 animate-bounce" />
               </a>
 
-              <a
-                href={profileData.resumeUrl}
-                download="Ashish_Joshi_Resume.pdf"
-                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-sm bg-dark-900/80 backdrop-blur-md border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/10 hover:border-cyan-400 transition-all duration-300 hover:scale-105 active:scale-95"
-              >
-                <FileText className="w-4 h-4" />
-                <span>Download Resume</span>
-              </a>
+              <div className="inline-flex items-center rounded-xl bg-dark-900/80 backdrop-blur-md border border-cyan-500/30 overflow-hidden shadow-glow-cyan/5 transition-all duration-300 hover:border-cyan-400 hover:scale-105 active:scale-95">
+                <button
+                  type="button"
+                  onClick={openResumeModal}
+                  className="inline-flex items-center gap-2 px-4 py-3.5 font-semibold text-sm text-cyan-300 hover:bg-cyan-500/10 transition-colors cursor-pointer"
+                  title="View full resume preview"
+                >
+                  <Eye className="w-4 h-4 text-cyan-400" />
+                  <span>View Resume</span>
+                </button>
+                <span className="w-px h-6 bg-cyan-500/20" />
+                <a
+                  href={profileData.resumeUrl}
+                  download="Ashish_Joshi_Resume.pdf"
+                  className="inline-flex items-center gap-1.5 px-3.5 py-3.5 font-semibold text-sm text-slate-300 hover:text-cyan-300 hover:bg-cyan-500/10 transition-colors"
+                  title="Download Resume PDF directly"
+                  aria-label="Download Resume PDF"
+                >
+                  <Download className="w-4 h-4" />
+                </a>
+              </div>
 
               <a
                 href="#contact"

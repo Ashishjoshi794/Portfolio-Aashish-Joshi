@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Code2, Compass, Sparkles, CheckCircle2 } from 'lucide-react';
+import { GraduationCap, Code2, Compass, Sparkles, CheckCircle2, Eye, Download } from 'lucide-react';
 import { profileData } from '../data/profile';
 import { Counter } from '../components/common/Counter';
 import { TiltCard } from '../components/common/TiltCard';
+import { openResumeModal } from '../components/resume/ResumeModal';
 
 export const About: React.FC = () => {
   return (
@@ -60,6 +61,28 @@ export const About: React.FC = () => {
                 </div>
               </div>
             </TiltCard>
+
+            {/* Official Resume Action Bar */}
+            <div className="mt-4 flex items-center justify-center gap-3">
+              <button
+                type="button"
+                onClick={openResumeModal}
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-xs bg-dark-900/90 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/15 hover:border-cyan-400 transition-all cursor-pointer shadow-glow-cyan/5 hover:scale-105 active:scale-95"
+                title="View & Inspect Official Resume"
+              >
+                <Eye className="w-3.5 h-3.5 text-cyan-400" />
+                <span>View Official Resume</span>
+              </button>
+              <a
+                href={profileData.resumeUrl}
+                download="Ashish_Joshi_Resume.pdf"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl font-semibold text-xs bg-white/5 border border-white/10 text-slate-300 hover:text-white hover:bg-white/10 transition-all hover:scale-105 active:scale-95"
+                title="Download Resume PDF directly"
+              >
+                <Download className="w-3.5 h-3.5" />
+                <span>Download</span>
+              </a>
+            </div>
           </motion.div>
 
           {/* Right Column: Professional Narrative & Core Domains */}
